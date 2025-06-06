@@ -36,15 +36,16 @@
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
     }
-  .menu {
+   .menu-bar {
       margin-top: 3rem;
       display: flex;
       justify-content: center;
-      flex-wrap: wrap;
+      align-items: center;
       gap: 1rem;
+      flex-wrap: wrap;
     }
 
-    .menu a {
+    .menu a, .icon-btn {
       background-color: #1e1e1e;
       color: white;
       font-family: "Microsoft JhengHei", sans-serif;
@@ -54,11 +55,17 @@
       border-radius: 8px;
       font-size: 1.1rem;
       transition: all 0.3s ease;
+      cursor: pointer;
     }
 
-    .menu a:hover {
+    .menu a:hover,
+    .icon-btn:hover {
       background-color: #333;
       border-color: #ccc;
+    }
+
+    .icon-btn i {
+      font-size: 1.2rem;
     }
 
     @keyframes fadeIn {
@@ -83,14 +90,21 @@
     </p>
     <img src="p6.png" alt="安全性更新示意圖">
   </div>
-   <div class="menu">
-      <a href="security-update.html">安全性更新</a>
-      <a href="firewall.html">防火牆</a>
-      <a href="antivirus.html">防毒軟體</a>
-      <a href="phishing.html">釣魚攻擊</a>
+    <div class="menu-bar">
+      <button class="icon-btn" onclick="goPrevious()">
+        <i class="fas fa-arrow-left"></i>
+      </button>
+
+      <div class="menu">
+        <a href="security-update.html">安全性更新</a>
+        <a href="firewall.html">防火牆</a>
+        <a href="antivirus.html">防毒軟體</a>
+        <a href="phishing.html">釣魚攻擊</a>
+      </div>
+
+      <button class="icon-btn" onclick="goNext()">
+        <i class="fas fa-arrow-right"></i>
+      </button>
     </div>
-   <div style="text-align: right; margin-top: 2rem;">
-          <a href="if2.html" style="color: #007bff; text-decoration: none;">← 返回首頁</a>
-        </div>
 </body>
 </html>
