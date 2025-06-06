@@ -52,6 +52,40 @@
     .text-box li {
       margin-bottom: 10px;
     }
+      .menu-bar {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 50px;
+      gap: 20px;
+    }
+
+    .icon-btn {
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .icon-btn:hover svg {
+      transform: scale(1.2);
+    }
+
+    .menu a {
+      color: white;
+      text-decoration: none;
+      margin: 0 12px;
+      font-size: 1.1em;
+      border: 1px solid white;
+      padding: 8px 12px;
+      border-radius: 8px;
+      transition: background 0.3s;
+    }
+
+    .menu a:hover {
+      background-color: #333;
+    }
   </style>
 </head>
 <body>
@@ -71,6 +105,28 @@
       </ul>
     </div>
   </div>
+<div class="menu-bar">
+    <!-- 房子圖示（回首頁） -->
+    <a href="index.html" class="icon-btn" title="回首頁">
+      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 576 512" fill="white">
+        <path d="M541 229.16V464c0 8.84-7.16 16-16 16H368c-8.84 0-16-7.16-16-16V368c0-8.84-7.16-16-16-16H240c-8.84 0-16 7.16-16 16v96c0 8.84-7.16 16-16 16H51c-8.84 0-16-7.16-16-16V229.16c0-6.38 2.54-12.5 7.03-17L239.03 43c9.38-9.37 24.57-9.37 33.94 0L534 212.16c4.49 4.49 7 10.61 7 17z"/>
+      </svg>
+    </a>
 
+    <!-- 選單 -->
+    <div class="menu">
+      <a href="security-update.html">安全性更新</a>
+      <a href="firewall.html">防火牆</a>
+      <a href="antivirus.html">防毒軟體</a>
+      <a href="phishing.html">釣魚攻擊</a>
+    </div>
+
+    <!-- 播放圖示（下一頁） -->
+    <a href="firewall.html" class="icon-btn" title="下一頁">
+      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 448 512" fill="white">
+        <path d="M424.4 214.7L72.4 3.7C39.6-13.1 0 10.1 0 48v416c0 37.9 39.6 61.1 72.4 44.3l352-211C455.2 282.6 455.2 229.4 424.4 214.7z"/>
+      </svg>
+    </a>
+  </div>
 </body>
 </html>
