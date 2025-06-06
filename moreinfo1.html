@@ -67,7 +67,16 @@
     .icon-btn i {
       font-size: 1.2rem;
     }
-
+.icon-btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 10px;
+  transition: transform 0.3s ease;
+}
+.icon-btn:hover svg {
+  transform: scale(1.1);
+}
     @keyframes fadeIn {
       from {
         opacity: 0;
