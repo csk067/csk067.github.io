@@ -2,68 +2,65 @@
 <html lang="zh-Hant">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>更多資訊</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <title>什麼是安全性更新</title>
   <style>
     body {
-      color: #333;
-      font-family: "Helvetica Neue", sans-serif;
+      background-color: #1e1e1e;
+      color: white;
+      font-family: "Microsoft JhengHei", sans-serif;
+      padding: 2rem;
+      margin: 0;
     }
 
-    .info-section {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: center;
-      padding: 4rem 2rem;
-      gap: 2rem;
+    .container {
+      max-width: 800px;
+      margin: auto;
+      animation: fadeIn 2s ease-in;
     }
 
-.info-image img {
-  display: block;
-}
-    .info-image {
-      flex: 1 1 300px;
-      max-width: 400px;
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
     }
 
-    .info-image img {
+    p {
+      font-size: 1.25rem;
+      line-height: 1.8;
+    }
+
+    img {
       width: 100%;
-      height: auto;
+      max-width: 600px;
+      display: block;
+      margin: 2rem auto;
       border-radius: 10px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
     }
 
-    .info-text {
-      flex: 1 1 300px;
-      max-width: 600px;
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
   </style>
 </head>
 <body>
-  <section class="_about_s9kuk_1" style="background-color:#0c1b26;">
-    <div class="_title_s9kuk_27">更多資訊</div>
-    <div class="info-section">
-      <!-- 左邊圖片 -->
-      <div class="info-image">
-        <img src="https://csk067.github.io/p5.jpg" alt="示意圖">
-      </div>
-
-      <!-- 右邊文字 -->
-      <div class="info-text _information_s9kuk_71">
-        <div class="_headline_s9kuk_83">為什麼系統更新如此重要？</div>
-        <div class="_subtitle_s9kuk_91">資安風險的第一道防線</div>
-        <p>許多攻擊者利用作業系統和應用程式的已知漏洞進行入侵，而系統更新常常就是修補這些漏洞的方式。</p>
-        <p>除了防止駭客入侵，更新也能改善效能、穩定性與相容性。</p>
-
-        <div class="_subtitle_s9kuk_91" style="margin-top: 2rem;">那為什麼有人會後悔更新？</div>
-        <p>某些更新可能導致系統錯誤、相容性問題，甚至資料遺失，因此「及時備份」與「延遲觀望」也是一種智慧。</p>
-
-        <div style="text-align: right; margin-top: 2rem;">
+  <div class="container">
+    <h1>什麼是安全性更新？</h1>
+    <p>
+      安全性更新是軟體開發者為了解決系統中已知的漏洞或弱點所發布的修補程式。
+      它們有助於保護使用者的電腦或裝置免受惡意軟體、駭客攻擊與資料外洩等威脅。
+      定期安裝安全性更新是維護資訊安全的基本步驟。
+    </p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Cybersecurity_Collage.jpg/800px-Cybersecurity_Collage.jpg" alt="安全性更新示意圖">
+  </div>
+   <div style="text-align: right; margin-top: 2rem;">
           <a href="if2.html" style="color: #007bff; text-decoration: none;">← 返回首頁</a>
         </div>
-      </div>
-    </div>
-  </section>
 </body>
+</html>
