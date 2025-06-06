@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>如果不更新會發生什麼事？</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #121212;
+      color: white;
+      font-family: 'Arial', sans-serif;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 40px;
+      gap: 40px;
+    }
+
+    .image-box img {
+      max-width: 400px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(255,255,255,0.2);
+    }
+
+    .text-box {
+      max-width: 500px;
+    }
+
+    .text-box h1 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    .text-box ul {
+      font-size: 1.1em;
+      line-height: 1.8;
+      padding-left: 20px;
+    }
+
+    .text-box li {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="wrapper">
+    <div class="image-box">
+      <img src="https://cdn-icons-png.flaticon.com/512/1828/1828843.png" alt="警告圖示">
+    </div>
+    <div class="text-box">
+      <h1>如果不更新會發生什麼事？</h1>
+      <ul>
+        <li>更容易受到駭客或病毒攻擊</li>
+        <li>漏洞未修補，系統不安全</li>
+        <li>應用程式或硬體不再相容</li>
+        <li>可能失去技術支援與保障</li>
+        <li>資料外洩風險提高</li>
+      </ul>
+    </div>
+  </div>
+
+</body>
+</html>
