@@ -2,7 +2,7 @@
 <html lang="zh-Hant">
 <head>
   <meta charset="UTF-8">
-  <title>觀看資安影片</title>
+  <title>資安影片預覽</title>
   <style>
     body {
       background-color: #1e1e2f;
@@ -17,42 +17,46 @@
       margin-bottom: 30px;
     }
 
-    .youtube-link {
+    .youtube-preview {
       display: inline-block;
-      padding: 20px;
       border: 2px solid white;
       border-radius: 10px;
-      background-color: #2e2e3f;
-      transition: background-color 0.3s ease;
-      text-decoration: none;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
-    .youtube-link:hover {
-      background-color: #44445a;
+    .youtube-preview:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 15px #ffffff50;
     }
 
-    .youtube-icon {
-      width: 80px;
-      height: 60px;
-      vertical-align: middle;
-    }
-
-    .youtube-text {
+    .youtube-preview img {
+      width: 100%;
+      height: auto;
       display: block;
+    }
+
+    .youtube-caption {
       margin-top: 12px;
       font-size: 1.2em;
-      color: #ffffff;
+    }
+
+    .preview-wrapper {
+      max-width: 640px;
+      margin: 0 auto;
     }
   </style>
 </head>
 <body>
 
-  <h1>深入了解資安：觀看介紹影片</h1>
+  <h1>觀看資安介紹影片</h1>
 
-  <a class="youtube-link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg" alt="YouTube Logo" class="youtube-icon">
-    <span class="youtube-text">前往觀看</span>
-  </a>
+  <div class="preview-wrapper">
+    <a class="youtube-preview" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+      <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/hqdefault.jpg" alt="影片預覽">
+    </a>
+    <div class="youtube-caption">點我觀看完整影片</div>
+  </div>
 
 </body>
 </html>
