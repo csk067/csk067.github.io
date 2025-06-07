@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>常見資安攻擊與對應方法</title>
+  <style>
+    body {
+      font-family: "Microsoft JhengHei", sans-serif;
+      background-color: #fff7f0;
+      margin: 0;
+      padding: 40px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.2em;
+      color: #222;
+      margin-bottom: 40px;
+    }
+
+    .accordion {
+      max-width: 700px;
+      margin: 0 auto;
+      border: 1px solid #e39855;
+      background-color: #fff6ee;
+    }
+
+    .accordion-item {
+      border-top: 1px solid #e39855;
+    }
+
+    .accordion-button {
+      background: none;
+      color: #912f0d;
+      cursor: pointer;
+      padding: 18px 24px;
+      width: 100%;
+      text-align: left;
+      font-size: 1.2em;
+      font-weight: bold;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border: none;
+      outline: none;
+    }
+
+    .accordion-button:hover {
+      background-color: #ffe8d8;
+    }
+
+    .accordion-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+      background-color: #fff3e6;
+      padding: 0 24px;
+    }
+
+    .accordion-content p {
+      margin: 16px 0;
+      color: #444;
+    }
+
+    .accordion-item.active .accordion-content {
+      max-height: 200px; /* 可根據內容調整 */
+      padding-bottom: 20px;
+    }
+
+    .icon {
+      font-size: 1.5em;
+      transition: transform 0.3s ease;
+    }
+
+    .accordion-item.active .icon {
+      transform: rotate(45deg);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>常見資安攻擊與對應方法</h1>
+
+  <div class="accordion">
+    <div class="accordion-item">
+      <button class="accordion-button">
+        DoS 和 DDoS 攻擊
+        <span class="icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <p>分散式阻斷服務會導致網站癱瘓。可透過防火牆和流量監控工具預防。</p>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <button class="accordion-button">
+        網路釣魚攻擊
+        <span class="icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <p>常見於偽造信件或網站騙取使用者資料。需加強員工資安意識。</p>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <button class="accordion-button">
+        勒索軟體
+        <span class="icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <p>透過加密檔案要求贖金。應定期備份與更新防毒軟體。</p>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <button class="accordion-button">
+        SQL 注入攻擊
+        <span class="icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <p>藉由輸入惡意語法竄改資料庫。需採用參數化查詢防範。</p>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <button class="accordion-button">
+        惡意軟體攻擊
+        <span class="icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <p>潛藏於可執行檔或郵件附件。請勿隨意下載或執行未知檔案。</p>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <button class="accordion-button">
+        撞庫憑證填充攻擊
+        <span class="icon">+</span>
+      </button>
+      <div class="accordion-content">
+        <p>利用洩漏帳密嘗試登入其他平台。建議開啟多因素驗證。</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const items = document.querySelectorAll('.accordion-item');
+    items.forEach(item => {
+      item.querySelector('.accordion-button').addEventListener('click', () => {
+        item.classList.toggle('active');
+      });
+    });
+  </script>
+
+</body>
+</html>
