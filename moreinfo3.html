@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>更新前請先 停、看、聽</title>
+  <style>
+    body {
+      background-color: #121212;
+      color: white;
+      font-family: "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 40px;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.2em;
+      margin-bottom: 40px;
+    }
+
+    .steps {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+    }
+
+    .step {
+      background-color: #1e1e1e;
+      border: 1px solid #444;
+      border-radius: 12px;
+      padding: 25px;
+      max-width: 300px;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(255,255,255,0.1);
+    }
+
+    .step img {
+      width: 60px;
+      height: 60px;
+      margin-bottom: 15px;
+    }
+
+    .step h2 {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+      color: #ffd700;
+    }
+
+    .step p {
+      font-size: 1.05em;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>更新前請先：停、看、聽</h1>
+
+  <div class="steps">
+    <div class="step">
+      <img src="https://cdn-icons-png.flaticon.com/512/753/753345.png" alt="停 icon">
+      <h2>停</h2>
+      <p>先不要急著按下更新，請先確認更新內容與其影響。</p>
+    </div>
+
+    <div class="step">
+      <img src="https://cdn-icons-png.flaticon.com/512/709/709496.png" alt="看 icon">
+      <h2>看</h2>
+      <p>查看更新後的版本說明，了解新增了哪些功能或修補了哪些問題。</p>
+    </div>
+
+    <div class="step">
+      <img src="https://cdn-icons-png.flaticon.com/512/2206/2206368.png" alt="聽 icon">
+      <h2>聽</h2>
+      <p>搜尋 Google 或聽聽其他用戶的意見，有時候初期更新可能會出現 Bug。</p>
+    </div>
+  </div>
+
+</body>
+</html>
