@@ -6,7 +6,8 @@
   <style>
     body {
       font-family: "Microsoft JhengHei", sans-serif;
-      background-color: #fff7f0;
+      background-color: #1e1e2f; /* 深色背景 */
+      color: #ffffff;
       margin: 0;
       padding: 40px;
     }
@@ -14,24 +15,24 @@
     h1 {
       text-align: center;
       font-size: 2.2em;
-      color: #222;
       margin-bottom: 40px;
     }
 
     .accordion {
       max-width: 700px;
       margin: 0 auto;
-      border: 1px solid #e39855;
-      background-color: #fff6ee;
+      border: 1px solid #ffaa66;
+      background-color: #2e2e3f;
+      border-radius: 10px;
     }
 
     .accordion-item {
-      border-top: 1px solid #e39855;
+      border-top: 1px solid #ffaa66;
     }
 
     .accordion-button {
       background: none;
-      color: #912f0d;
+      color: #ffa07a;
       cursor: pointer;
       padding: 18px 24px;
       width: 100%;
@@ -46,24 +47,24 @@
     }
 
     .accordion-button:hover {
-      background-color: #ffe8d8;
+      background-color: #3c3c5a;
     }
 
     .accordion-content {
       max-height: 0;
       overflow: hidden;
       transition: max-height 0.3s ease;
-      background-color: #fff3e6;
+      background-color: #383850;
       padding: 0 24px;
     }
 
     .accordion-content p {
       margin: 16px 0;
-      color: #444;
+      color: #ffffff;
     }
 
     .accordion-item.active .accordion-content {
-      max-height: 200px; /* 可根據內容調整 */
+      max-height: 200px;
       padding-bottom: 20px;
     }
 
