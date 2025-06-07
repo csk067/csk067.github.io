@@ -2,7 +2,7 @@
 <html lang="zh-Hant">
 <head>
   <meta charset="UTF-8">
-  <title>常見資安攻擊與對應方法</title>
+  <title>關於系統更新的情境</title>
   <style>
     body {
       font-family: "Microsoft JhengHei", sans-serif;
@@ -76,73 +76,96 @@
     .accordion-item.active .icon {
       transform: rotate(45deg);
     }
+     .menu-bar {
+      margin-top: 3rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .menu a, .icon-btn {
+      background-color: #1e1e1e;
+      color: white;
+      font-family: "Microsoft JhengHei", sans-serif;
+      text-decoration: none;
+      padding: 0.75rem 1.5rem;
+      border: 1px solid white;
+      border-radius: 8px;
+      font-size: 1.1rem;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .menu a:hover,
+    .icon-btn:hover {
+      background-color: #333;
+      border-color: #ccc;
+    }
+
+    .icon-btn i {
+      font-size: 1.2rem;
+    }
+.icon-btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 10px;
+  transition: transform 0.3s ease;
+}
+.icon-btn:hover svg {
+  transform: scale(1.1);
+}
   </style>
 </head>
 <body>
 
-  <h1>常見資安攻擊與對應方法</h1>
+  <h1>關於系統更新的情境</h1>
 
   <div class="accordion">
     <div class="accordion-item">
       <button class="accordion-button">
-        DoS 和 DDoS 攻擊
+        如果系統跳出系統更新該如何應對
         <span class="icon">+</span>
       </button>
       <div class="accordion-content">
-        <p>分散式阻斷服務會導致網站癱瘓。可透過防火牆和流量監控工具預防。</p>
+        <p>如果更新沒有問題,並且未超出系統規格,應立即更新以確保安全</p>
       </div>
     </div>
 
     <div class="accordion-item">
       <button class="accordion-button">
-        網路釣魚攻擊
+        如果生活繁忙,沒時間確認更新
         <span class="icon">+</span>
       </button>
       <div class="accordion-content">
-        <p>常見於偽造信件或網站騙取使用者資料。需加強員工資安意識。</p>
+        <p>可開啟夜間自動更新,不會沒時間更新</p>
       </div>
     </div>
 
     <div class="accordion-item">
       <button class="accordion-button">
-        勒索軟體
+       系統偵測到嚴重的資安漏洞，必須立即修補，因此推送強制更新
         <span class="icon">+</span>
       </button>
       <div class="accordion-content">
-        <p>透過加密檔案要求贖金。應定期備份與更新防毒軟體。</p>
+        <p>須立刻更新,不然會讓系統暴露在危險中</p>
       </div>
     </div>
 
     <div class="accordion-item">
       <button class="accordion-button">
-        SQL 注入攻擊
+        版本選擇可更新為beta版
         <span class="icon">+</span>
       </button>
       <div class="accordion-content">
-        <p>藉由輸入惡意語法竄改資料庫。需採用參數化查詢防範。</p>
+        <p>可自行選擇是否更新,如有錯誤,可立即變為正式版</p>
       </div>
     </div>
 
-    <div class="accordion-item">
-      <button class="accordion-button">
-        惡意軟體攻擊
-        <span class="icon">+</span>
-      </button>
-      <div class="accordion-content">
-        <p>潛藏於可執行檔或郵件附件。請勿隨意下載或執行未知檔案。</p>
-      </div>
+    
     </div>
-
-    <div class="accordion-item">
-      <button class="accordion-button">
-        撞庫憑證填充攻擊
-        <span class="icon">+</span>
-      </button>
-      <div class="accordion-content">
-        <p>利用洩漏帳密嘗試登入其他平台。建議開啟多因素驗證。</p>
-      </div>
-    </div>
-  </div>
 
   <script>
     const items = document.querySelectorAll('.accordion-item');
@@ -152,6 +175,28 @@
       });
     });
   </script>
+<div class="menu-bar">
+    <!-- 房子圖示（回首頁） -->
+    <a href="if2.html" class="icon-btn" title="回首頁">
+      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 576 512" fill="white">
+        <path d="M541 229.16V464c0 8.84-7.16 16-16 16H368c-8.84 0-16-7.16-16-16V368c0-8.84-7.16-16-16-16H240c-8.84 0-16 7.16-16 16v96c0 8.84-7.16 16-16 16H51c-8.84 0-16-7.16-16-16V229.16c0-6.38 2.54-12.5 7.03-17L239.03 43c9.38-9.37 24.57-9.37 33.94 0L534 212.16c4.49 4.49 7 10.61 7 17z"/>
+      </svg>
+    </a>
 
+    <!-- 選單 -->
+    <div class="menu">
+      <a href="moreinfo1.html">安全性更新</a>
+      <a href="moreinfo2.html">不更新的後果</a>
+      <a href="moreinfo3.html">更新停看聽</a>
+      <a href="phishing.html">釣魚攻擊</a>
+    </div>
+
+    <!-- 播放圖示（下一頁） -->
+    <a href="firewall.html" class="icon-btn" title="下一頁">
+      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 448 512" fill="white">
+        <path d="M424.4 214.7L72.4 3.7C39.6-13.1 0 10.1 0 48v416c0 37.9 39.6 61.1 72.4 44.3l352-211C455.2 282.6 455.2 229.4 424.4 214.7z"/>
+      </svg>
+    </a>
+  </div>
 </body>
 </html>
